@@ -14,6 +14,7 @@ import {
   FileCheck,
   User,
   Settings,
+  DollarSign,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -49,6 +50,7 @@ const navigation: NavSection[] = [
     title: "MANAGEMENT",
     items: [
       { id: "calendar", label: "Calendar", sublabel: "Schedule & events", icon: Calendar, path: "/calendar" },
+      { id: "budget", label: "Budget Config", sublabel: "Rates & costs", icon: DollarSign, path: "/budget-config" },
       { id: "invoices", label: "Slips & Invoices", sublabel: "Financial tracking", icon: FileText, path: "/invoices" },
       { id: "users", label: "User Management", sublabel: "Team & permissions", icon: Users, path: "/users" },
     ],
