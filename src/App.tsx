@@ -8,6 +8,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import CompletedProjectsPage from "./pages/CompletedProjectsPage";
 import CalendarPage from "./pages/CalendarPage";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
+import BudgetConfigPage from "./pages/BudgetConfigPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/projects/:id" element={<ProjectDetailsPage />} />
           <Route path="/completed" element={<CompletedProjectsPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
+          <Route path="/budget-config" element={<BudgetConfigPage />} />
           {/* Placeholder routes */}
           <Route path="/manager" element={<DirectorDashboard />} />
           <Route path="/invoices" element={<DirectorDashboard />} />
